@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="app_name">AndroidVTMTLib</string>
+    <string name="app">Ứng Dụng</string>
+    <!-- Thông điệp lỗi -->
+    <string name="bad_request">Sai cấu trúc request.</string>
+    <string name="network_timeout">Không có kết nối mạng.</string>
+    <string name="not_found">Không tìm thấy tài nguyên.</string>
+    <string name="session_timeout">Phiên đăng nhập không còn hiệu lực.</string>
+    <string name="internal_server_error">Lỗi máy chủ .</string>
+    <string name="error_session_reset">Lỗi buộc reset session .</string>
+    <string name="error_account_locked_request">Account đã bị khóa.</string>
+    <string name="error_common">Lỗi chung.</string>
+    <string name="ok">OK</string>
+    <string name="warning">Warning</string>
+    <string name="cancel">CANCEL</string>
+    <string name="noti1">Bạn có</string>
+    <string name="noti2"> tin nhắn từ hệ thống.</string>
+
+</resources>

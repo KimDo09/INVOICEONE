@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.viettel.invoice.one"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <permission
+        android:name="com.viettel.project.common.permission.BROADCAST"
+        android:label="BROADCASTCOMMON"
+        android:protectionLevel="dangerous" >
+    </permission>
+    <permission
+        android:name="com.viettel.project.common.permission.ACTIVITY"
+        android:label="ACTIVITYPERMISSION"
+        android:protectionLevel="dangerous" >
+    </permission>
+    <permission
+        android:name="com.viettel.project.common.permission.SERVICE"
+        android:label="SERVICECOMMON"
+        android:protectionLevel="dangerous" >
+    </permission>
+
+    <uses-permission android:name="com.viettel.project.common.permission.ACTIVITY" />
+    <uses-permission android:name="com.viettel.project.common.permission.BROADCAST" />
+    <uses-permission android:name="com.viettel.project.common.permission.SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name="com.viettel.vpmt.template.GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomerActionBarSherlock" >
+        <activity
+            android:name="com.viettel.vpmt.template.view.activity.ActivityLogin"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:permission="com.viettel.project.common.permission.ACTIVITY"
+            android:screenOrientation="sensorPortrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.viettel.vpmt.template.view.activity.TestActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:permission="com.viettel.project.common.permission.ACTIVITY"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.viettel.vpmt.template.view.activity.demo.OrmSqliteActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:permission="com.viettel.project.common.permission.ACTIVITY"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.viettel.vpmt.template.view.activity.MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:permission="com.viettel.project.common.permission.ACTIVITY"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/slidemenu_content_item_selector"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/laysolieugiaothu"
+        style="@style/SlmItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dip8"
+        android:layout_marginTop="@dimen/dip8"
+        android:background="@drawable/slidemenu_content_item_selector"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/common_slidingmenu_icon_account"
+            android:contentDescription="@string/app" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:text="Lấy số liệu giao thu"
+            android:textColor="@color/green" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/laysolieugiaothu"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dip8"
+        android:layout_marginTop="@dimen/dip8"
+        android:background="@color/green" />
+
+    <LinearLayout
+        android:id="@+id/chamnohoadon"
+        style="@style/SlmItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_marginLeft="@dimen/dip8"
+        android:layout_marginTop="@dimen/dip8"
+        android:background="@drawable/slidemenu_content_item_selector"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/common_slidingmenu_icon_account"
+            android:contentDescription="@string/app" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:text="Chấm nợ hóa đơn"
+            android:textColor="@color/green" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/chamnohoadon"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dip8"
+        android:layout_marginTop="@dimen/dip8"
+        android:background="@color/green" />
+
+    <LinearLayout
+        android:id="@+id/chamnohoadonoffline"
+        style="@style/SlmItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line2"
+        android:layout_marginLeft="@dimen/dip8"
+        android:layout_marginTop="@dimen/dip8"
+        android:background="@drawable/slidemenu_content_item_selector"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/common_slidingmenu_icon_account"
+            android:contentDescription="@string/app" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:text="Chấm nợ hóa đơn offline"
+            android:textColor="@color/green" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/chamnohoadonoffline"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dip8"
+        android:layout_marginTop="@dimen/dip8"
+        android:background="@color/green" />
+
+    <LinearLayout
+        android:id="@+id/cauhinhhethong"
+        style="@style/SlmItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line3"
+        android:layout_marginLeft="@dimen/dip8"
+        android:layout_marginTop="@dimen/dip8"
+        android:background="@drawable/slidemenu_content_item_selector"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/common_slidingmenu_icon_account"
+            android:contentDescription="@string/app" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:text="Cấu hình hệ thống"
+            android:textColor="@color/green" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/cauhinhhethong"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dip8"
+        android:layout_marginTop="@dimen/dip8"
+        android:background="@color/green" />
+
+    <LinearLayout
+        android:id="@+id/solieuthutheongay"
+        style="@style/SlmItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line4"
+        android:layout_marginLeft="@dimen/dip8"
+        android:layout_marginTop="@dimen/dip8"
+        android:background="@drawable/slidemenu_content_item_selector"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/common_slidingmenu_icon_account"
+            android:contentDescription="@string/app" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:text="Số liệu thu theo ngày"
+            android:textColor="@color/green" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/solieuthutheongay"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dip8"
+        android:layout_marginTop="@dimen/dip8"
+        android:background="@color/green" />
+
+    <LinearLayout
+        android:id="@+id/lichsuthutien"
+        style="@style/SlmItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line5"
+        android:layout_marginLeft="@dimen/dip8"
+        android:layout_marginTop="@dimen/dip8"
+        android:background="@drawable/slidemenu_content_item_selector"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/common_slidingmenu_icon_account"
+            android:contentDescription="@string/app" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:text="Lịch sử thu tiền"
+            android:textColor="@color/green" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line6"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/lichsuthutien"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dip8"
+        android:layout_marginTop="@dimen/dip8"
+        android:background="@color/green" />
+
+    <LinearLayout
+        android:id="@+id/doimatkhau"
+        style="@style/SlmItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line6"
+        android:layout_marginLeft="@dimen/dip8"
+        android:layout_marginTop="@dimen/dip8"
+        android:background="@drawable/slidemenu_content_item_selector"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/common_slidingmenu_icon_account"
+            android:contentDescription="@string/app" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:text="Đổi mật khẩu"
+            android:textColor="@color/green" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line7"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/doimatkhau"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dip8"
+        android:layout_marginTop="@dimen/dip8"
+        android:background="@color/green" />
+
+    <LinearLayout
+        android:id="@+id/huygachnohoadon"
+        style="@style/SlmItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line7"
+        android:layout_marginLeft="@dimen/dip8"
+        android:layout_marginTop="@dimen/dip8"
+        android:background="@drawable/slidemenu_content_item_selector"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/common_slidingmenu_icon_account"
+            android:contentDescription="@string/app" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:text="Hủy gạch nợ hóa đơn"
+            android:textColor="@color/green" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/huygachnohoadon"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dip8"
+        android:layout_marginTop="@dimen/dip8"
+        android:background="@color/green" />
+
+    <LinearLayout
+        android:id="@+id/danhsachhuygachno"
+        style="@style/SlmItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line8"
+        android:layout_marginLeft="@dimen/dip8"
+        android:layout_marginTop="@dimen/dip8"
+        android:background="@drawable/slidemenu_content_item_selector"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/common_slidingmenu_icon_account"
+            android:contentDescription="@string/app" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:text="Danh sách hủy gạch nợ"
+            android:textColor="@color/green" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line9"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/danhsachhuygachno"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dip8"
+        android:layout_marginTop="@dimen/dip8"
+        android:background="@color/green" />
+
+    <LinearLayout
+        android:id="@+id/huysolieutrongdienthoai"
+        style="@style/SlmItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line9"
+        android:layout_marginLeft="@dimen/dip8"
+        android:layout_marginTop="@dimen/dip8"
+        android:background="@drawable/slidemenu_content_item_selector"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/common_slidingmenu_icon_account"
+            android:contentDescription="@string/app" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:text="Hủy số liệu trong điện thoại"
+            android:textColor="@color/green" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/huysolieutrongdienthoai"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dip8"
+        android:layout_marginTop="@dimen/dip8"
+        android:background="@color/green" />
+
+    <LinearLayout
+        android:id="@+id/thoatkhoihethong"
+        style="@style/SlmItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line9"
+        android:layout_marginLeft="@dimen/dip8"
+        android:layout_marginTop="@dimen/dip8"
+        android:background="@drawable/slidemenu_content_item_selector"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/common_slidingmenu_icon_account"
+            android:contentDescription="@string/app" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:text="Thoát khỏi hệ thống"
+            android:textColor="@color/green" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line11"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/thoatkhoihethong"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dip8"
+        android:layout_marginTop="@dimen/dip8"
+        android:background="@color/green" />
+
+</RelativeLayout>

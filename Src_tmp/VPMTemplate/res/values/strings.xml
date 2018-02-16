@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Invoice.One</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- Network state -->
+    <string name="text_confirm_exit_app">Bạn có chắc muốn thoát khỏi Invoice.One?</string>
+    <string name="text_button_ok">Có</string>
+    <string name="text_button_no">Không</string>
+    <string name="choose_cancel">Bạn chọn Cancel</string>
+    <string name="browser">Browser</string>
+    <string name="action_settings">Settings</string>
+    <!-- Calendar -->
+    <string name="single">Single</string>
+    <string name="multi">Multi</string>
+    <string name="range">Range</string>
+    <string name="refresh">Refresh</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+    <string name="options_clear">Clear</string>
+    <string name="options_exit">Exit</string>
+
+</resources>

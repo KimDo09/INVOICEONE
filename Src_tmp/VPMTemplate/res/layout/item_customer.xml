@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlCustomer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/slidemenu_content_item_selector"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/customerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dip"
+        android:text="Nguyễn Văn A"
+        android:textColor="@color/red"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/customerAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customerName"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dip"
+        android:maxLines="2"
+        android:text="12 Lô C, Lê Thánh Tôn, Nha Trang, Khánh Hòa"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/customerID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customerAddress"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dip"
+        android:maxLines="2"
+        android:text="PQ01000136829 Số tiền:"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/customerInvoiceMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customerAddress"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@id/customerID"
+        android:maxLines="2"
+        android:text="125,450"
+        android:textColor="@color/red"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/customerSTT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customerID"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dip"
+        android:maxLines="2"
+        android:text="STT: 012   TD 1-03/2014"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/customerSTT"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dip8"
+        android:layout_marginTop="@dimen/dip8"
+        android:background="@color/green" />
+
+</RelativeLayout>

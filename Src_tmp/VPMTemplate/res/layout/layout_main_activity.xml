@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <com.viettel.vpmt.template.view.control.ProgressBarTextView
+        android:id="@+id/progressBarTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" >
+    </com.viettel.vpmt.template.view.control.ProgressBarTextView>
+
+    <LinearLayout
+        android:id="@+id/llTimkiem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/timkiemHoaDon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dip8"
+            android:layout_marginTop="@dimen/dip12"
+            android:layout_weight="1"
+            android:hint="Nhập ID Hóa Đơn/STT"
+            android:maxLength="10"
+            android:singleLine="true" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/timkiemKhachHang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dip8"
+            android:layout_marginTop="@dimen/dip12"
+            android:layout_weight="1"
+            android:hint="Nhập Mã KH/Địa chỉ"
+            android:maxLength="10"
+            android:singleLine="true" >
+        </EditText>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listviewDanhSachKhachHang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llTimkiem"
+        android:background="@color/white"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/white"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent" />
+
+</RelativeLayout>
